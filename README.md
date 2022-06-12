@@ -8,7 +8,7 @@ In this assignment we are required to build an NLP application in order to help 
 * The chatbot will be include with two NLP models:
 * sentiment analysis model: to predict polarity of the reviews
 * multiclass text classification model: to predict the class/classes of the reviews
-* The classes we chose are
+* The classes we chose are:
   * Appointment
   * Facilities
   * Staff
