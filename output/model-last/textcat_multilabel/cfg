@@ -1,0 +1,9 @@
+{
+  "labels":[
+    "Appointments",
+    "Facilities",
+    "Staff",
+    "Treatment"
+  ],
+  "threshold":0.5
+}
