@@ -1,0 +1,17 @@
+{
+  "greeting": {
+    "message": [
+      "Hello! We hope you've enjoyed your stay so far. If you don't mind, we'd like to ask for a review. Do feel free to write about your experience with us."
+    ]
+  },
+  "positive_reply": {
+    "message": [
+      "We're glad to here that you had a good experience with our <category> and we thank you for a great review. We'll definitely aim to continue providing these services for the time to come."
+    ]
+  },
+  "negative_reply": {
+    "message": [
+      "We regret that you had a bad experience with our <category>. We'll be sure to pass on your feedback to the relevant staff for future improvement and thank you for your input. Aside from this, do you have any other feedback to give?"
+    ]
+  }
+}
