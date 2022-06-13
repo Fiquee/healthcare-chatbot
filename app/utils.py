@@ -28,7 +28,7 @@ def insert_to_rds(reference, data):
 
 
 def get_from_rds(reference):
-    ref = db.reference("/reviews")
+    ref = db.reference(reference)
     results = ref.get()
 
     return results

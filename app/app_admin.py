@@ -10,12 +10,9 @@ def app():
     st.write("Most Recent Reviews")
 
     results = get_from_rds("/reviews")
-    value_list = []
+    entries = results.values()
 
-    for key in results:
-        value_list.append(results[key])
-
-    df = pd.DataFrame(value_list)
+    df = pd.DataFrame(entries)
     df = df[["review", "sentiment", "category"]]
     df["category"] = df["category"].apply(lambda x: ", ".join(x))
     df.rename(columns={"review": "Review", "sentiment": "Sentiment",
