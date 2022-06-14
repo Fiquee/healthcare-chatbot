@@ -34,15 +34,15 @@
 
   ],
   "performance":{
-    "cats_score":0.9983228381,
+    "cats_score":0.9997278311,
     "cats_score_desc":"macro AUC",
-    "cats_micro_p":0.9975232198,
-    "cats_micro_r":0.9993796526,
-    "cats_micro_f":0.9984505733,
-    "cats_macro_p":0.9980220846,
-    "cats_macro_r":0.999742268,
-    "cats_macro_f":0.9988792071,
-    "cats_macro_auc":0.9983228381,
+    "cats_micro_p":0.9975170701,
+    "cats_micro_r":0.996898263,
+    "cats_micro_f":0.9972075706,
+    "cats_macro_p":0.9986464375,
+    "cats_macro_r":0.997113164,
+    "cats_macro_f":0.9978738598,
+    "cats_macro_auc":0.9997278311,
     "cats_f_per_type":{
       "Appointments":{
         "p":1.0,
@@ -55,17 +55,17 @@
         "f":1.0
       },
       "Staff":{
-        "p":0.9989690722,
-        "r":0.9989690722,
-        "f":0.9989690722
+        "p":0.9969167523,
+        "r":1.0,
+        "f":0.9984559959
       },
       "Treatment":{
-        "p":0.9931192661,
-        "r":1.0,
-        "f":0.996547756
+        "p":0.9976689977,
+        "r":0.9884526559,
+        "f":0.9930394432
       }
     },
     "cats_macro_auc_per_type":0.0,
-    "textcat_multilabel_loss":0.2796106535
+    "textcat_multilabel_loss":0.1947442825
   }
 }
