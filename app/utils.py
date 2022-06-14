@@ -22,6 +22,13 @@ if not firebase_admin._apps:
         'databaseURL': db_url})
 
 
+def highlight_rows(s):
+    if s["Sentiment"] == "positive":
+        return ['background-color: #04aa6d']*len(s)
+    elif s["Sentiment"] == "negative":
+        return ['background-color: #f44336']*len(s)
+
+
 def insert_to_rds(reference, data):
     ref = db.reference(reference)
     ref.push().set(data)
@@ -68,7 +75,7 @@ def predict_category(text):
     category_predictions = []
 
     for key, confidence in predictions.items():
-        if confidence > 0.5:
+        if confidence > 0.8:
             category_predictions.append(key.lower())
 
     return category_predictions

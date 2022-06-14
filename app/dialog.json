@@ -6,12 +6,23 @@
   },
   "positive_reply": {
     "message": [
-      "We're glad to here that you had a good experience with our <category> and we thank you for a great review. We'll definitely aim to continue providing these services for the time to come."
+      "We're glad to hear that you had a good experience with our <category> and we thank you for a great review. We'll definitely aim to continue providing these services for the time to come. Would you like share anything else with us?"
     ]
   },
   "negative_reply": {
     "message": [
       "We regret that you had a bad experience with our <category>. We'll be sure to pass on your feedback to the relevant staff for future improvement and thank you for your input. Aside from this, do you have any other feedback to give?"
+    ]
+  },
+  "end_conversation": {
+    "message": [
+      "These are the reviews that we collected from you. We thank you for your feedback and we hope to make use of them in order to continuously provide better services in the future!"
+    ]
+  },
+  "filler_replies": {
+    "message": [
+      "I'm sorry, I didn't get that. Could you elaborate a bit more?",
+      "I'm sorry but I couldn't quite catch that. Could you perhaps be a bit more specific?"
     ]
   }
 }
