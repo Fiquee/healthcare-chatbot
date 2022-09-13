@@ -1,28 +1,31 @@
-# healthcare-chatbot
+# Healthcare Review Management Chatbot
 
-Natural Language Processing Assignment
+WID3002 Natural Language Processing Group Assignment
 
-In this assignment we are required to build an NLP application in order to help in healthcare domain.
+In this assignment, we are required to build an NLP application in order to help in healthcare domain.
 
-### **Overview**
+### Overview
 
-- We decided to build a chatbot that will act as a platform for the end user to give feedback about the healthcare they were in
-- The chatbot will be include with two NLP models:
-  - sentiment analysis model: to predict polarity of the reviews
-  - multiclass text classification model: to predict the category/categories of the reviews
-- The classes we chose are:
+- We decided to build a chatbot that will act as a platform for the end user to give feedback about the healthcare they received.
+- The platform then includes an admin view for the healthcare personnel to easily identify how the patients feel based on the sentiment of their reviews and in what areas they can improve based on text classification.
+- The chatbot then includes two NLP models:
+  1. **Sentiment Analysis Model** to predict sentiment polarity of the reviews.
+  2. **Multi-class Text Classification Model** to predict the probable categories of the reviews (a single review can be related to multiple classes).
+- The classes we chose for the model to classify are:
   - Appointment
   - Facilities
   - Staff
   - Treatment
+- Although a rough prototype, the resulting model showed promise and evaluation metrics in the form of precision and recall values were used to determine the best threshold at the time.
 
 ### **Dataset**
 
-- dataset was collected by scrapping hospital/clinic reviews from Google Maps reviews
+- The dataset was collected by scraping selected hospital/clinic reviews from Google Maps reviews.
+- They were then manually annotated by the team members in order to form a labeled dataset for the classes and sentiment for each review.
 
-### **Model used**
+### Model Used
 
-- We plan to implement a pre-trained model by Spacy and retrain with our dataset
+- A pre-trained model by Spacy was used and further tuned with our custom dataset.
 
 ### Running the Application
 
@@ -34,3 +37,22 @@ In this assignment we are required to build an NLP application in order to help 
    cd app
    streamlit run app.py
    ```
+
+### Application Preview
+
+**Chatbot View**
+
+<img src="screenshots/1_chatbot.jfif">
+
+**Positive Review Example**
+
+<img src="screenshots/2_sample_positive.jfif">
+
+**Negative Review Example**
+
+<img src="screenshots/3_sample_negative.jfif">
+
+**Dashboard View**
+
+<img src="screenshots/4_dashboard_1.jfif">
+<img src="screenshots/5_dashboard_2.jfif">
